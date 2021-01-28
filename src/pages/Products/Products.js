@@ -1,13 +1,11 @@
 import React from 'react';
-import { InfoSection } from '../../components';
-import { homeObj3, homeObj4 } from './Data';
+import Pricing from '../../components/Pricing/Pricing';
+
 
 const Products = () => {
     return (
         <>
-            <InfoSection {...homeObj3} />
-            <InfoSection {...homeObj4} />
-         
+            <Pricing />
         </>
     )
 }

@@ -52,15 +52,16 @@ const Navbar = () => {
                         </NavLinks>
                     </NavItem>
                     <NavItem>
+                        <NavLinks to='/products'>
+                            Donation
+                        </NavLinks>
+                    </NavItem>
+                    <NavItem>
                         <NavLinks to='/todo'>
                             To do
                         </NavLinks>
                     </NavItem>
-                    <NavItem>
-                        <NavLinks to='/products'>
-                            Products
-                        </NavLinks>
-                    </NavItem>
+                    
                     <NavBtn>
                         {button ? (
                             <NavBtnLink to='/sign-up'>
