@@ -52,8 +52,8 @@ const Navbar = () => {
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='/services'>
-                            Services
+                        <NavLinks to='/todo'>
+                            To do
                         </NavLinks>
                     </NavItem>
                     <NavItem>
