@@ -1,12 +1,12 @@
 import React from 'react';
 import { InfoSection } from '../../components';
-import { homeObj3, homeObj4 } from './Data';
+import { homeObj1, homeObj2 } from './Data';
 
 const SignUp = () => {
     return (
         <>
-            <InfoSection {...homeObj3} />  
-            <InfoSection {...homeObj4} />
+            <InfoSection {...homeObj1} />  
+            <InfoSection {...homeObj2} />
         </>
     )
 }

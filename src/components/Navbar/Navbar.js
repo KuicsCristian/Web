@@ -62,8 +62,8 @@ const Navbar = () => {
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='/bla'>
-                            BlaBla
+                        <NavLinks to='/tasktr'>
+                            Tracker
                         </NavLinks>
                     </NavItem>
                     

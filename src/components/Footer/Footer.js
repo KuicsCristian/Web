@@ -28,32 +28,28 @@ const Footer = () => {
                         <FooterLink to='sign-up'>How it works</FooterLink>
                         <FooterLink to='/'>Testimonials</FooterLink>
                         <FooterLink to='/'>Careers</FooterLink>
-                        <FooterLink to='/'>Facts</FooterLink>
-                        <FooterLink to='/'>Terms of Service</FooterLink>
+
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <FooterLinkTitle>Contact us</FooterLinkTitle>
-                        <FooterLink to='sign-up'>How it works</FooterLink>
-                        <FooterLink to='/'>Testimonials</FooterLink>
-                        <FooterLink to='/'>Careers</FooterLink>
-                        <FooterLink to='/'>Facts</FooterLink>
-                        <FooterLink to='/'>Terms of Service</FooterLink>
+                        <FooterLink to='sign-up'>Complaints</FooterLink>
+                        <FooterLink to='/'>Feedback</FooterLink>
+                        <FooterLink to='/'>Questions</FooterLink>
+
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <FooterLinkTitle>Videos</FooterLinkTitle>
-                        <FooterLink to='sign-up'>How it works</FooterLink>
-                        <FooterLink to='/'>Testimonials</FooterLink>
-                        <FooterLink to='/'>Careers</FooterLink>
-                        <FooterLink to='/'>Facts</FooterLink>
-                        <FooterLink to='/'>Terms of Service</FooterLink>
+                        <FooterLink href={'//www.youtube.com/watch?v=Zh4R-r7AyAw'} target='_blank' >Dog on moon</FooterLink>
+                        <FooterLink to='/'>First man on moon</FooterLink>
+                        <FooterLink to='/'>Fun Space Facts</FooterLink>
+
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <FooterLinkTitle>Social Media</FooterLinkTitle>
-                        <FooterLink to='sign-up'>How it works</FooterLink>
-                        <FooterLink to='/'>Testimonials</FooterLink>
-                        <FooterLink to='/'>Careers</FooterLink>
-                        <FooterLink to='/'>Facts</FooterLink>
-                        <FooterLink to='/'>Terms of Service</FooterLink>
+                        <FooterLink to='sign-up'>Facebook</FooterLink>
+                        <FooterLink to='/'>Instagram</FooterLink>
+                        <FooterLink to='/'>Neptune</FooterLink>
+
                     </FooterLinksItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>

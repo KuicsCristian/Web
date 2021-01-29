@@ -4,18 +4,21 @@ import Todo from './Todo';
 import './Todo.css';
 
 function TodoList() {
+
   const [todos, setTodos] = useState([]);
 
+  //code eliminates spaces between words
   const addTodo = todo => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
     }
-
     const newTodos = [todo, ...todos];
 
+  //new value of todo
     setTodos(newTodos);
   };
 
+  //update function. if changes , remap and update
   const updateTodo = (todoId, newValue) => {
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
       return;
@@ -24,6 +27,7 @@ function TodoList() {
     setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)));
   };
 
+  //remove based on id
   const removeTodo = id => {
     const removedArr = [...todos].filter(todo => todo.id !== id);
 

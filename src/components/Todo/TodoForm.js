@@ -8,18 +8,20 @@ function TodoForm(props) {
   useEffect(() => {
     inputRef.current.focus();
   });
-
+//catches errors
   const handleChange = e => {
     setInput(e.target.value);
   };
-
+  //catches errors
   const handleSubmit = e => {
     e.preventDefault();
 
+    // random id on submit
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
       text: input
     });
+    //Prevents refreshes
     setInput('');
   };
 
