@@ -20,8 +20,12 @@ import {
 
 function Pricing() {
   return (
+    
     <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
+      
+      
       <PricingSection>
+      
         <PricingWrapper>
           <PricingHeading>Donation Packs</PricingHeading>
           <PricingContainer>
@@ -29,6 +33,7 @@ function Pricing() {
               <PricingCardInfo>
                 <PricingCardIcon>
                   <GiEarthAmerica />
+                 
                 </PricingCardIcon>
                 <PricingCardPlan>Space Pebble</PricingCardPlan>
                 <PricingCardCost>$19.99*</PricingCardCost>

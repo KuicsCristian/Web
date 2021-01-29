@@ -61,6 +61,11 @@ const Navbar = () => {
                             To do
                         </NavLinks>
                     </NavItem>
+                    <NavItem>
+                        <NavLinks to='/bla'>
+                            BlaBla
+                        </NavLinks>
+                    </NavItem>
                     
                     <NavBtn>
                         {button ? (
