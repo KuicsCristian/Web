@@ -7,7 +7,7 @@ export const Header = ({ title, onAdd, showAdd }) => {
   return (
     <header className='header'>
       <h1>{title}</h1>
-      {location.pathname === '/' && (
+      {location.pathname == '/tasktrack' && (
         <Button
           color={showAdd ? 'red' : 'green'}
           text={showAdd ? 'Close' : 'Add'}

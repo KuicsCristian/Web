@@ -1,10 +1,10 @@
-import TaskTracker from "../../components/TaskTracker/TaskTracker";
+import TaskTrack from "../../components/TaskTracker/TaskTrack";
 
 const TaskTr = () => {
 
   return (
     <>  
-    <TaskTracker />
+    <TaskTrack />
     </>
   )
 };

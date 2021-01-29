@@ -62,7 +62,7 @@ const Navbar = () => {
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='/tasktr'>
+                        <NavLinks to='/tasktrack'>
                             Tracker
                         </NavLinks>
                     </NavItem>

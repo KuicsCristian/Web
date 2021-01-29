@@ -6,8 +6,9 @@ import Todo from './pages/Todo/Todo';
 import Products from './pages/Products/Products';
 import SignUp from './pages/SignUp/Signup';
 import ScrollToTop from './components/ScrollToTop';
-import TaskTracker from './components/TaskTracker/TaskTracker';
+import TaskTracker from './components/TaskTracker/TaskTrack';
 import TaskTr from './pages/TaskTr/TaskTr';
+import TaskTrack from './components/TaskTracker/TaskTrack';
 
 
 
@@ -25,7 +26,7 @@ function App() {
         <Route path='/todo' exact component={Todo}/>
         <Route path='/products' exact component={Products}/>
         <Route path='/sign-up' exact component={SignUp}/>
-        <Route  exact path='/tasktr' exact component={TaskTr}/> 
+        <Route path='/tasktrack' component={TaskTr}></Route>
 
       </Switch>
       <Footer />

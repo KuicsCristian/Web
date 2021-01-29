@@ -6,7 +6,7 @@ import AddTask from './AddTask';
 import './TaskTracker.css';
 
 
- const TaskTracker = () => {
+ const TaskTrack = () => {
   const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([])
 
@@ -21,7 +21,7 @@ import './TaskTracker.css';
 
   // Fetch Tasks
   const fetchTasks = async () => {
-    const res = await fetch('http://localhost:5000/tasks')
+    const res = await fetch('http://localhost:5003/tasks')
     const data = await res.json()
 
     return data
@@ -29,7 +29,7 @@ import './TaskTracker.css';
 
   // Fetch Task
   const fetchTask = async (id) => {
-    const res = await fetch(`http://localhost:5000/tasks/${id}`)
+    const res = await fetch(`http://localhost:5003/tasks/${id}`)
     const data = await res.json()
 
     return data
@@ -37,7 +37,7 @@ import './TaskTracker.css';
 
   // Add Task
   const addTask = async (task) => {
-    const res = await fetch('http://localhost:5000/tasks', {
+    const res = await fetch('http://localhost:5003/tasks', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -53,7 +53,7 @@ import './TaskTracker.css';
 
   // Delete Task
   const deleteTask = async (id) => {
-    await fetch(`http://localhost:5000/tasks/${id}`, {
+    await fetch(`http://localhost:5003/tasks/${id}`, {
       method: 'DELETE',
     })
 
@@ -65,7 +65,7 @@ import './TaskTracker.css';
     const taskToToggle = await fetchTask(id)
     const updTask = { ...taskToToggle, reminder: !taskToToggle.reminder }
 
-    const res = await fetch(`http://localhost:5000/tasks/${id}`, {
+    const res = await fetch(`http://localhost:5003/tasks/${id}`, {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',
@@ -84,13 +84,14 @@ import './TaskTracker.css';
 
   return (
     <Router>
+     
       <div className='container'>
         <Header
           onAdd={() => setShowAddTask(!showAddTask)}
           showAdd={showAddTask}
         />
         <Route
-          path='/'
+          path='/tasktrack'
           exact
           render={(props) => (
             <>
@@ -109,8 +110,9 @@ import './TaskTracker.css';
         />
     
       </div>
+   
     </Router>
   )
 };
 
-export default TaskTracker;
+export default TaskTrack;
